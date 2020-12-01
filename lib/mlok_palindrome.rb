@@ -7,17 +7,17 @@ class String
     processed == processed.reverse
   end
 
-  def letters
-    letters = []
-    (0..length - 1).each do |i|
-      letters << self[i] if self[i].match(/[a-zA-Z]/)
-    end
-    letters.join
-  end
+  # def letters
+  #   self.chars.select { |c| c.match(/[a-z]/i) }.join
+  # end
 
   private
 
+  # def processed
+  #   letters.downcase
+  # end
+
   def processed
-    letters.downcase
+    self.scan(/[a-z]/i).join.downcase
   end
 end

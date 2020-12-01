@@ -19,7 +19,7 @@ class MlokPalindromeTest < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
 
-  def test_letter
-    assert_equal "Madam, I'm Adam.".letters, 'MadamImAdam'
-  end
+  # def test_letter
+  #   assert_equal "Madam, I'm Adam.".letters, 'MadamImAdam'
+  # end
 end
